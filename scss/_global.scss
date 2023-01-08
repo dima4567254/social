@@ -1,0 +1,115 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1;
+    color: $black;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    font-family: 'Roboto';
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.title {
+    color: $black2;
+    font-size: 40px;
+    font-weight: 700;
+
+    @media (max-width: 992px) {
+        font-size: 36px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 25px;
+    }
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    &--sr {
+        max-width: 1050px;
+    }
+}
+
+.link {
+    background-color: $orange;
+    border: none;
+    border-radius: 30px;
+    color: $black2;
+    font-size: 16px;
+    display: block;
+    transition: color 0.5s;
+    text-align: center;
+
+    &:focus {
+        color: $focus;
+    }
+
+    &:hover {
+        background-color: $hover2;
+    }
+
+    &:active {
+        color: $active;
+    }
+}
+
+
+.close {
+    display: none;
+}
+
+.active {
+    background-image: url('../images/caret_down.svg');
+    background-position: right;
+    background-size: cover;
+}
+
+.active-modal {
+    display: flex;
+
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
+
+
+// @media (max-width: 1800px) {}
+
+// @media (max-width: 1200px) {}
+
+// @media (max-width: 992px) {}
+
+// @media (max-width: 768) {}
+
+// @media (max-width: 576px) {}

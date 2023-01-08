@@ -1,0 +1,68 @@
+/*$Butler: 'Butler',
+sans-serif;*/
+
+$focus: #14B4BE;
+$orange: #FF9900;
+$active: #fb0909;
+$ac: #fcd7b6;
+// $green: #14B4BE;
+$white: #FFFFFF;
+$black: #000000;
+$black2: #101820;
+$black3: #656a70;
+$silver: #f4f4f5;
+$silver2: #c5c5c5;
+$violet:#481d77;
+$violet2:#41166e;
+$hover2:#ffd382;
+$hover: #ffb71b;
+// $red: #e72828;
+// $red1 :#fe3e57;
+$orange: #ffa500;
+
+/*$ac: #fcd7b6;
+
+/*accent*/
+
+
+// $default: #243f4d;
+
+// $Cream: #feefe2;
+// $Crayola: #c2d2db;
+
+
+
+
+
+
+
+@mixin line-clamp($line-clamp, ) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line-clamp;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+}
+
+@mixin line-height($font-size, $line-height, ) {
+
+  line-height: ($line-height / $font-size)
+}
+
+/*
+@include clamp(5);
+*/
+
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}

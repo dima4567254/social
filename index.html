@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://yoursite.ru/favicon.png" type="image/x-icon">
+    <title>Social</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+<!--
+поставить везде лин хейдж
+
+ламп кламп
+
+проверить фокусі и валидатор
+потом проверить все своиства в ксс
+
+в райсе картинки на баграунте а в модал имг
+спорно титулы в модал должны быть h3 или h4
+-->
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="menu ">
+                <a class="menu__logo-link" href="#">
+                    <img class="menu__logo logo" src="images/logo.svg" alt="logo">
+                </a>
+                <ul class="menu__items">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="#">
+                            Кто мы?
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#service">
+                            Почему мы?
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#collections">
+                            Вакансии
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#price">
+                            Хочу к вам!
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#products">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <button class="menu__btn" type="button">
+                    <span></span>
+                    <span class="sr-only">открыть меню</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="intro">
+            <h1 class="sr-only">
+                Cайт о работе в мастерской общения
+            </h1>
+            <div class="container">
+                <div class="intro__box">
+                    <h2 class="intro__title">
+                        Общайся, развивайся, зарабатывай!
+                    </h2>
+                    <a class="intro__link link" href="#price">
+                        Хочу в команду
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__box">
+                        <h2 class="about__title title">
+                            Be Social –
+                            мастерская общения
+                        </h2>
+                        <div class="about__text">
+                            <p>
+                                Пока обычные люди сидят на своих скучных работах, мы уже более 5 лет спасаем мир от
+                                одиночества!
+                                Каждый человек заслуживает внимания, чтобы переживания – выслушали, заслугам –
+                                порадовались,
+                                на
+                                флирт – улыбнулись. Именно этим и занимаемся – слушаем, слышим и мурлыкаем.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- 
+        <section class="income">
+            <div class="container">
+                <div class="income__wraper">
+                    <div class="income__item">
+                        <a class="income__logo-link" href="#">
+                            <img class="income__logo logo" src="images/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="income__box">
+                        <h2 class="income__title title">
+                            Мы – дейтинговая студия, которая собрала в себя сильную команду общительных людей
+                        </h2>
+                        <div class="income__text">
+                            <p>
+                                Работаем с самыми популярными международными сайтами знакомств по партнерской программе
+                                и
+                                получаем комиссионные, если одинокие иностранные мужчины знакомятся с нашими клиентками.
+                            </p>
+                            <p>
+                                Мы, как котики, которые всегда готовы помурлыкать, если кто-то нуждается в любви, заботе
+                                и
+                                внимании. Присоединяйся к нам, помоги сделать как можно больше людей счастливыми.
+                                Мур-мур.
+                            </p>
+                        </div>
+                        <div class="statistics">
+                            <ul class="statistics__items">
+                                <li class="statistics__item">
+                                    <span>></span>300
+                                    <div class="statistics__text">
+                                        <p>
+                                            сотрудников
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="statistics__item">
+                                    600<span>$</span>
+                                    <div class="statistics__text">
+                                        <p>
+                                            средний доход
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="statistics__item">
+                                    2014
+                                    <div class="statistics__text">
+                                        <p>
+                                            год основания
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+    -->
+   
+        <section class="terms">
+            <div class="container">
+                <h2 class="terms__title">
+                    Быть в нашей команде интересно и перспективно
+                </h2>
+                <ul class="terms__items">
+                    <li class="terms__item terms__item--salary">
+                        <h3 class="terms__subtitle">
+                            Зарплата от $600
+                        </h3>
+                        <div class="terms__text">
+                            <p> Нет никаких лимитов. Заработок зависит только от тебя, и мы готовы выплачивать его в
+                                100% размере каждую неделю.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="terms__item terms__item--career">
+                        <h3 class="terms__subtitle">
+                            Карьерный рост
+                        </h3>
+                        <div class="terms__text">
+                            <p>
+                                Ты прирожденный лидер? Умеешь вдохновлять на достижение результата? С нами у тебя будет
+                                возможность построить команду мечты.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="terms__item terms__item--freedom">
+                        <h3 class="terms__subtitle">
+                            Свобода выбора
+                        </h3>
+                        <div class="terms__text">
+                            <p>
+                                Работай удаленно, валяясь в удобной кроватке или сидя в любимом в кафе. Ты сам решаешь,
+                                как пройдет твой день.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="terms__item terms__item--location">
+                        <h3 class="terms__subtitle">
+                            Удобная локация
+                        </h3>
+                        <div class="terms__text">
+                            <p>
+                                Ты из Киева и любишь быть в центре событий? Тогда наш уютный офис, в 3 минутах от метро
+                                Льва Толстого, открыт для тебя 24/7.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="terms__item terms__item--english">
+                        <h3 class="terms__subtitle">
+                            Прокачивай английский
+                        </h3>
+                        <div class="terms__text">
+                            <p>
+                                Ежедневная практика с носителями языка. Наши сотрудники повышают уровень с Intermediate
+                                до Advanced всего за 3 месяца. Такого не дадут ни одни курсы!
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+ 
+        <section class="schedule">
+            <div class="container container--sr">
+                <h2 class="schedule__title title">
+                    Мы составили несколько отличных вариантов графика работы, на твой выбор, конечно:
+                </h2>
+                <div class="schedule__text">
+                    <p>
+                        8 часов – заработок от 600$
+                    </p>
+                </div>
+                <ul class="schedule__items">
+                    <li class="schedule__item schedule__item--circle">
+                        <div class="schedule__box">
+                            <div class="schedule__number">
+                                07:00 – 15:00
+                            </div>
+                            <div class="schedule__subtext">
+                                <p>
+                                    Утренняя смена
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="schedule__item schedule__item--sunset">
+                        <div class="schedule__box">
+                            <div class="schedule__number">
+                                15:00 – 23:00
+                            </div>
+                            <div class="schedule__subtext">
+                                <p>
+                                    Вечерняя смена
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="schedule__item schedule__item--month">
+                        <div class="schedule__box">
+                            <div class="schedule__number">
+                                23:00 – 7:00
+                            </div>
+                            <div class="schedule__subtext">
+                                <p>
+                                    Ночная смена
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="schedule__text">
+                    <p>
+                        12 часов – заработок от 800$
+                    </p>
+                </div>
+                <ul class="schedule__items">
+                    <li class="schedule__item schedule__item--circle">
+                        <div class="schedule__box">
+                            <div class="schedule__number">
+                                07:00 – 19:00
+                            </div>
+                            <div class="schedule__subtext">
+                                <p>
+                                    Утренняя смена
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="schedule__item schedule__item--sunset">
+                        <div class="schedule__box">
+                            <div class="schedule__number">
+                                07:00 – 15:00
+                            </div>
+                            <div class="schedule__subtext">
+                                <p>
+                                    Утренняя смена
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="schedule__item schedule__item--month">
+                        <div class="schedule__box">
+                            <div class="schedule__number">
+                                15:00 – 03:00
+                            </div>
+                            <div class="schedule__subtext">
+                                <p>
+                                    Вечерняя смена
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+       
+        <section class="price" id="price">
+            <div class="container">
+                <h2 class="price__title title">
+                    Хочешь к нам? Отлично! Нам нужны:
+                </h2>
+                <ul class="price__list">
+                    <li class="price__item price__item--operator">
+                        <!-- поменять на линк -->
+                        <a class="price__button price__button--operator" href="#price">
+                            <div class="price__box">
+                                <h3 class="price__subtitle">
+                                    Оператор чата
+                                </h3>
+                                <div class="price__text">
+                                    <p>
+                                        Заводи новые знакомства, общайся и зарабатывай
+                                    </p>
+                                </div>
+                                <ul class="price__items">
+                                    <li class="">
+                                        Знаешь английский на уровне Intermediate и выше.
+                                    </li>
+                                    <li class="">
+                                        У тебя дома есть компьютер или же ты из Киева и можешь работать в офисе
+                                    </li>
+                                    <li class="">
+                                        Сможешь проводить онлайн более 8 часов в день.
+                                    </li>
+                                </ul>
+                                <div class="price__text">
+                                    <p>
+                                        Заводи новые знакомства, общайся и зарабатывай
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <form class="modal">
+                            <div class="modal__inner">
+                                <img class="modal__images" src="images/operator-c.svg" alt="Оператор">
+                                <div class="modal__box">
+                                    <h3 class="modal__title">Оператор чата</h3>
+                                    <div class="modal__text">
+                                        <p>
+                                            Заводи новые знакомства, общайся и зарабатывай
+                                        </p>
+                                    </div>
+
+                                    <label class="modal__label" for="operator-name">
+                                        Как тебя зовут?
+                                    </label>
+                                    <input class="modal__input" id="operator-name" type="text" name="name"
+                                        placeholder="Том" required>
+                                    <label class="modal__label" for="operator-tel">
+                                        Твой телефон
+                                    </label>
+                                    <input class="modal__input modal__input--tel" id="operator-tel" type="tel"
+                                        name="tel" placeholder="+99 (099) 99999999" required>
+                                    <label class="modal__label" for="operator-email">
+                                        Твой e-mail
+                                    </label>
+                                    <input class="modal__input" id="operator-email" type="email" name="email"
+                                        placeholder="kitty@site.com" required>
+
+                                    <label class="modal__label" for="operator-city">
+                                        С какого ты города?
+                                    </label>
+                                    <input class="modal__input" id="operator-city" type="text" name="city"
+                                        placeholder="Киев" required>
+                                    <button class="modal__link link" type="submit">
+                                        Отправить
+                                    </button>
+                                    <div class="modal__text">
+                                        Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+                                        соглашаетесь
+                                        c
+                                        политикой конфиденциальности
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="price__item price__item--scout">
+                        <a class="price__button price__button--scout" href="#price">
+                            <div class="price__box">
+                                <h3 class="price__subtitle">модельный скаут</h3>
+                                <div class="price__text">
+                                    <p>
+                                        Занимайся поиском
+                                        самых красивых девушек и приглашай к сотрудничеству с нами
+                                    </p>
+                                </div>
+                                <ul class="price__items">
+                                    <li class="">
+                                        Ты общительный и позитивный человек. Умеешь работать с социальными сетями.
+                                    </li>
+                                    <li class="">
+                                        Имеешь хороший вкус и легко заводишь знакомства с красотками.
+                                    </li>
+                                    <li class="">
+                                        Давно хотел найти занятость со свободным графиком и без привязки к офису.
+                                    </li>
+                                    <li class="">
+                                        Знаешь английский на уровне Upper-Intermediate и выше.
+                                    </li>
+                                </ul>
+                                <div class="price__text">
+                                    <p>
+                                        От $50 до $200 за каждую клиентку
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <form class="modal modal--scout">
+                            <div class="modal__inner">
+                                <img class="modal__images" src="images/scout-c.svg" alt="Оператор">
+                                <div class="modal__box">
+                                    <h3 class="modal__title">модельный скаут</h3>
+                                    <div class="modal__text">
+                                        <p>
+                                            Занимайся поиском
+                                            самых красивых девушек и приглашай к сотрудничеству с нами
+                                        </p>
+                                    </div>
+                                    <label class="modal__label" for="scout-name">
+                                        Как тебя зовут?
+                                    </label>
+                                    <input class="modal__input" id="scout-name" type="text" name="name"
+                                        placeholder="Том" required>
+                                    <label class="modal__label" for="scout-tel">
+                                        Твой телефон
+                                    </label>
+
+                                    <input class="modal__input modal__input--tel" id="scout-tel" type="tel" name="tel"
+                                        placeholder="+99 (099) 99999999" required>
+
+                                    <label class="modal__label" for="scout-email">
+                                        Твой e-mail
+                                    </label>
+                                    <input class="modal__input" id="scout-email" type="email" name="email"
+                                        placeholder="kitty@site.com" required>
+
+                                    <label class="modal__label" for="scout-city">
+                                        С какого ты города?
+                                    </label>
+                                    <input class="modal__input" id="scout-city" type="text" name="city"
+                                        placeholder="Киев" required>
+                                    <button class="modal__link link" type="submit">
+                                        Отправить
+                                    </button>
+                                    <div class="modal__text">
+                                        Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+                                        соглашаетесь
+                                        c
+                                        политикой конфиденциальности
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                    <!-- удалить потом модификаторі -->
+                    <li class="price__item price__item--leader">
+                        <a class="price__button price__button--leader" href="#price">
+                            <div class="price__box">
+                                <h3 class="price__subtitle">
+                                    Team Leader
+                                </h3>
+                                <div class="price__text">
+                                    <p>
+                                        Обучай, вдохновляй и добивайся успеха вместе со своей командой мечты
+                                    </p>
+                                </div>
+                                <ul class="price__items">
+                                    <li class="">
+                                        Знаешь английский на уровне Upper-Intermediate и выше.
+                                    </li>
+                                    <li class="">
+                                        Опыт в дейтинге, преподавании или на руководящей позиции будет большим плюсом.
+                                    </li>
+                                    <li class="">
+                                        Ты любишь дисциплину, и мы можем тебе доверять.
+                                    </li>
+                                    <li class="">
+                                        Работа на этой позиции исключительно офисная, поэтому присоединяйся к нашей
+                                        команде
+                                        в
+                                        Киеве или помоги нам открыть филиал в своем городе.
+                                    </li>
+                                </ul>
+                                <div class="price__text">
+                                    <p>
+                                        Ставка + % (до 1500$)
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <form class="modal modal--leader">
+                            <div class="modal__inner">
+                                <img class="modal__images" src="images/leader-c.svg" alt="Оператор">
+                                <div class="modal__box">
+                                    <h3 class="modal__title">
+                                        Team Leader
+                                    </h3>
+                                    <div class="modal__text">
+                                        <p>
+                                            Обучай, вдохновляй и добивайся успеха вместе со своей командой мечты
+                                        </p>
+                                    </div>
+                                    <label class="modal__label" for="leader-name">
+                                        Как тебя зовут?
+                                    </label>
+                                    <input class="modal__input" id="leader-name" type="text" name="name"
+                                        placeholder="Том" required>
+
+
+                                    <label class="modal__label" for="leader-tel">
+                                        Твой телефон
+                                    </label>
+
+                                    <input class="modal__input modal__input--tel" id="leader-tel" type="tel" name="tel"
+                                        placeholder="+99 (099) 99999999" required>
+
+                                    <label class="modal__label" for="leader-email">
+                                        Твой e-mail
+                                    </label>
+                                    <input class="modal__input" id="leader-email" type="email" name="email"
+                                        placeholder="kitty@site.com" required>
+
+                                    <label class="modal__label" for="leader-city">
+                                        С какого ты города?
+                                    </label>
+                                    <input class="modal__input" id="leader-city" type="text" name="city"
+                                        placeholder="Киев" required>
+                                    <button class="modal__link link" type="submit">
+                                        Отправить
+                                    </button>
+                                    <div class="modal__text modal__text--color">
+                                        <p>
+                                            Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+                                            соглашаетесь
+                                            c
+                                            политикой конфиденциальности
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="contacts__inner">
+                <div class="contacts__box">
+                    <form class="form">
+                        <h2 class="form__title title">
+                            Хочешь зарабатывать от 600$
+                        </h2>
+                        <div class="form__subtext">
+                            <p>
+                                Оставляй заявку – мы расскажем как это сделать!
+                            </p>
+                        </div>
+                        <label class="form__label" for="form-name">
+                            Как тебя зовут?
+                        </label>
+                        <input class="form__input" id="form-name" type="text" name="name" placeholder="Том" required>
+                        <label class="form__label" for="form-tel">
+                            Твой телефон
+                        </label>
+                        <input class="form__input form__input--tel" id="form-tel" type="tel" name="tel"
+                            placeholder="+99 (099) 99999999" required>
+                        <label class="form__label" for="form-email">
+                            Твой e-mail
+                        </label>
+                        <input class="form__input" id="form-email" type="email" name="email"
+                            placeholder="kitty@site.com" required>
+                        <label class="form__label" for="form-city">
+                            С какого ты города?
+                        </label>
+                        <input class="form__input" id="form-city" type="text" name="city" placeholder="Киев" required>
+                        <button class="form__link link" type="submit">
+                            Отправить
+                        </button>
+                        <div class="form__text">
+                            Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c
+                            политикой конфиденциальности
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section> 
+    </main>
+<!---->
+    <!-- <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <a class="footer__logo-link" href="#">
+                        <img class="footer__logo logo" src="images/besocial_logotype_wh.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="footer__box">
+                    <div class="footer__info">
+                        <a class="footer__link" href="tel:+0502038079">+38 (050) 203-80-79</a>
+                        <span>| Vodafone</span>
+                    </div>
+                    <a class="footer__link" href="tel:+380951024713">+38 (095) 102-47-13</a>
+                </div>
+
+                <div class="footer__item">
+                    <div class="footer__text">
+                        <p>
+                            Написать в мессенджерах:
+                        </p>
+                    </div>
+                    <a class="footer__link footer__link--telegram" href="#">
+                        <span class="sr-only">ссылка на телеграм</span>
+                    </a>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__subtext">
+                        <p>
+                            г. Киев,
+                        </p>
+                        <p>
+                            м. Льва Толстого:
+                        </p>
+                    </div>
+                    <a class="footer__maps link" href="#">
+                        Посмотреть на Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>  -->
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
