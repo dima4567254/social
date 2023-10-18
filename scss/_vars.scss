@@ -1,0 +1,43 @@
+$focus: #14B4BE;
+$orange: #FF9900;
+$active: #fb0909;
+$ac: #fcd7b6;//2
+$white: #FFFFFF;//7
+$black: #000000;//16
+$black2: #101820;//1
+$black3: #656a70;//4
+$gray: #f4f4f5; //7
+$gray2: #c5c5c5; //3
+$violet:#481d77;//3
+$violet2:#41166e;//1
+$hover2:#ffd382;//1
+$hover: #ffb71b;//7
+$yellow: #ffb71b;//1
+$orange: #ffa500;//2
+
+@mixin line-clamp($line-clamp, ) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line-clamp;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+}
+
+@mixin line-height($font-size, $line-height, ) {
+
+  line-height: ($line-height / $font-size)
+}
+
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
