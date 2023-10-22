@@ -98,7 +98,6 @@ const observer = new IntersectionObserver((entries) => {
     threshold: 0.5
 });
 // для подсветки пунктов меню
-
 document.querySelectorAll('.section').forEach(section => { observer.observe(section) });
 
 const popupLinks = document.querySelectorAll('.modal-window');

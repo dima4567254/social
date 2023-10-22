@@ -43,26 +43,6 @@
     background-color: transparent;
 }
 
-.header-fixed {
-    position: fixed;
-    padding: 13px 0;
-    background-color: $gray;
-
-    .menu {
-        padding-top: 0;
-
-        &__logo {
-            display: none;
-        }
-
-        &__small {
-            display: block;
-            width: 150px;
-            height: 25px;
-        }
-    }
-}
-
 .menu {
     display: flex;
     justify-content: space-between;
@@ -826,7 +806,7 @@
         }
 
         &:hover {
-            -webkit-filter: brightness(90%);
+            filter: brightness(90%);
         }
 
         &:active {
@@ -1112,24 +1092,24 @@ body.lock {
 }
 
 .modal {
+    backdrop-filter: blur(1rem);
     position: fixed;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: auto;
-    overflow-x: hidden;
-    backdrop-filter: blur(1rem);
+    visibility: hidden;
     opacity: 0;
     z-index: 300;
-    visibility: hidden;
-    transition: all 0.8s ease 0s;
-    font-weight: 400;
-    line-height: 1.5;
+
+    &__wrapper {
+        overflow-x: hidden;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &.open {
         opacity: 1;
@@ -1138,28 +1118,27 @@ body.lock {
 
     &.open .modal__inner {
         transform: perspective(600px) translate(0, 0) rotateX(0);
-        opacity: 1;
+        transition: all .8s ease 0s;
     }
 
     &__inner {
-        top: 10%;
-        position: relative;
+        margin-top: 5%;
         max-width: 560px;
-        z-index: 1;
-        transition: all 0.8s ease 0s;
         transform: perspective(600px) translate(0, -100%) rotateX(45deg);
+        font-weight: 400;
+        line-height: 1.5;
     }
 
     &__btn {
         position: fixed;
-        top: 13px;
-        right: 15px;
+        top: 3%;
+        right: 2%;
         width: 30px;
         height: 22px;
         border: none;
         background-color: transparent;
         padding: 0;
-        z-index: 10;
+        z-index: 300;
         transition: color .5s;
 
         span {
@@ -1262,6 +1241,8 @@ body.lock {
         margin-bottom: 20px;
     }
 }
+
+
 
 .form {
     padding: 40px 30px;
