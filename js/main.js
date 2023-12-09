@@ -58,23 +58,12 @@ $(function () {
     let header = $('.header');
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 690) {
+        if ($(this).scrollTop() > 105) {
             header.addClass('header-fixed');
         } else {
             header.removeClass('header-fixed');
         }
     });
-});
-
-const header = document.querySelector('header');
-window.addEventListener('scroll', function () {
-    const scrollY = window.scrollY;
-
-    if (scrollY >= header.offsetHeight) {
-        header.classList.add('header-fixed');
-    } else {
-        header.classList.remove('header-fixed');
-    }
 });
 
 $('a[href="' + this.location.pathname + '"]').parent().addClass('header-fixed');

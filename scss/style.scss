@@ -43,10 +43,16 @@
     background-color: transparent;
 }
 
+.header-fixed {
+    position: fixed;
+    background-color: silver;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
+    padding-bottom: 15px;
 
     &__logo-link {
         margin-right: 20px;
@@ -365,6 +371,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 30px;
         margin-bottom: 80px;
         font-size: 22px;
 
@@ -372,13 +379,16 @@
             margin-bottom: 20px;
             font-size: 16px;
         }
+
+        @media (max-width: 576px) {
+            gap: 20px;
+        }
     }
 
     &__text p {
         max-width: 350px;
 
         &:not(:last-child) {
-            margin-right: 30px;
 
             @media (max-width: 768px) {
                 margin-bottom: 20px;
